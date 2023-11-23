@@ -3,9 +3,6 @@ import "@nomicfoundation/hardhat-toolbox";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.19",
-  mocha: {
-    timeout: 0,
-  },
   networks: {
     hardhat: {
       chainId: 100,
@@ -15,6 +12,11 @@ const config: HardhatUserConfig = {
         //blockNumber: 20086944+100,
       },
     },
+    gnosis: {
+      chainId: 100,
+      url: 'https://rpc.gnosischain.com',
+      timeout: 0,
+    }
   },
 }
 
