@@ -6,5 +6,5 @@ This project makes a CSV file of all TEC holders, their balances, and if they ar
 
 ```shell
 npm install
-npx hardhat run scripts/get-holders.ts > holders.csv
+npx hardhat --network gnosis run scripts/get-holders.ts > holders.csv
 ```
