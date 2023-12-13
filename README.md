@@ -6,5 +6,11 @@ This project makes a CSV file of all TEC holders, their balances, and if they ar
 
 ```shell
 npm install
-npx hardhat --network gnosis run scripts/get-holders.ts > holders.csv
+npx hardhat run scripts/get-holders.ts > holders.csv
+```
+
+It also can be used for ERC900 contracts and the `get-stake-holders.ts` script.
+
+```shell
+npx hardhat run scripts/get-stake-holders.ts > stake-holders.csv
 ```
